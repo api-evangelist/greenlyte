@@ -1,8 +1,27 @@
 aid: greenlyte
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/greenlyte.png
 name: Greenlyte
-description: Greenlyte is a company surfaced as a portfolio company of earlybird, partech and added to
-  the API Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment
-  pipeline.
+description: >-
+  Greenlyte Carbon Technologies is an Essen, Germany based climate-tech company building
+  its LiquidSolar platform, which liquefies air, sun, and water into 99% pure carbon and
+  hydrogen feedstocks to produce synthetic e-fuels (sustainable aviation fuel, synthetic
+  methanol, and synthetic natural gas) for hard-to-decarbonize industries. Founded as a
+  direct air capture and power-to-liquid venture, Greenlyte has raised more than 55M EUR
+  from Carbon Removal Partners, Earlybird, Partech, AENU, and Green Generation Fund. It was
+  surfaced through VC portfolio mining and added to the API Evangelist network. As of this
+  enrichment pass Greenlyte publishes no public developer, API, or documentation surface;
+  this profile captures its verifiable web identity and domain-security posture.
 url: https://raw.githubusercontent.com/api-evangelist/greenlyte/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -13,9 +32,16 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-19'
 tags:
 - Company
+- Climate Tech
+- Carbon Removal
+- Direct Air Capture
+- Synthetic Fuels
+- Sustainable Aviation Fuel
+- Energy
+- Sustainability
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -23,5 +49,17 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/greenlyte-domain-security.yml
 - type: Website
   url: https://www.greenlyte.tech/
+- type: PrivacyPolicy
+  url: https://www.greenlyte.tech/privacy-policy
+- type: Blog
+  name: Impact Log
+  url: https://www.greenlyte.tech/impact-log
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
